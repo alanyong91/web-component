@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Component</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Component</h1>
+
+    <div class="main">
+      <confirmation-modal
+        btnText="Confirm to proceed?" 
+        confirmText="Confirm" 
+        cancelText="Cancel"
+        confirmationMessage="Are you sure you want to proceed with this design?"
+        confirmMessage="We will proceed with this design"
+        cancelMessage="Please revert back the design"
+      ></confirmation-modal>
+
+      <confirmation-modal 
+        btnText="Click me!" 
+        confirmText="Yes" 
+        cancelText="No"
+        confirmationMessage="Please click either one of the buttons."
+        confirmMessage="You clicked Yes"
+        cancelMessage="You clicked No"
+      ></confirmation-modal>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
